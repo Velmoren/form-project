@@ -79,13 +79,19 @@ body {
 .custom-btn {
   background-color: #A9967D;
   height: 40px;
-  padding: 9px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
   border-radius: 4px;
   color: #FFFFFF;
   transition: background-color 0.2s;
   font-size: 14px;
   font-weight: 700;
-  line-height: 160%;
+  line-height: 16px;
+}
+.custom-btn span.icon {
+  margin-right: 8px;
 }
 .custom-btn:hover {
   background-color: #9f8a6e;

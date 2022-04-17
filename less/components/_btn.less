@@ -9,11 +9,18 @@
 .custom-btn {
   background-color: @btn-background;
   height: 40px;
-  padding: 9px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
   border-radius: 4px;
   color: @btn-color;
   transition: background-color .2s;
-  .custom-font(14px, 700, 160%);
+  .custom-font(14px, 700, 16px);
+
+  span.icon {
+    margin-right: 8px;
+  }
 
 
   &:hover {
