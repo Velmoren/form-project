@@ -22,27 +22,23 @@ button {
 body {
   background-color: #FCFCFC;
 }
-h1,
-h2,
-h3,
-h4 {
-  color: #000000;
-  margin-bottom: 0;
-}
 .section-content {
   background-color: #FFFFFF;
+  box-shadow: 0px 1px 4px #3b43571a;
 }
 .header {
   height: 123px;
   background-color: #C4C4C4;
 }
 .hero {
-  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
 .hero-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  color: #000000;
 }
 .hero-theme-buttons {
   display: flex;
@@ -118,6 +114,7 @@ h4 {
   border: 1px solid #9F9F9F;
   border-radius: 8px;
   position: relative;
+  background-color: #FFFFFF;
 }
 .form-group-bordered__remove-btn {
   display: flex;
@@ -149,14 +146,22 @@ h4 {
   border: 1px solid #D14114;
 }
 .form-label {
+  color: #282828;
+}
+.form-label-top {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
+}
+.form-input-range {
+  background-color: #F4F4F4;
+  border-radius: 4px;
 }
 .form-input-range__value {
   width: 48px;
   height: 48px;
   color: #9F9F9F;
+  background-color: #FFFFFF;
 }
 .form-input-range__wrapper {
   height: 48px;
@@ -165,12 +170,13 @@ h4 {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  background-color: #FFFFFF;
 }
 .form-input-text {
   width: 100%;
   border: 1px solid #DAD5CE;
   border-radius: 4px;
-  padding: 14px 16px;
+  padding: 13px 16px;
   outline: none;
   font-size: 14px;
   font-weight: 400;
@@ -299,6 +305,13 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #ffffff;
 }
+.form-input-text {
+  background-color: #FFFFFF;
+  font-family: 'PT Sans', sans-serif;
+}
+.form-input-text::placeholder {
+  font-family: 'PT Sans', sans-serif;
+}
 .switch {
   position: relative;
   display: inline-block;
@@ -345,3 +358,4 @@ input[type=range]:focus::-ms-fill-upper {
 .switch .slider.round:before {
   border-radius: 50%;
 }
+/*# sourceMappingURL=./style.css.map */

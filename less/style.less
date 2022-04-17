@@ -1,4 +1,4 @@
-// out: ../css/, compress: false, sourceMap: false
+// out: ../css/, compress: false, sourceMap: true
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import './abstracts/_variables.less';
 @import './abstracts/_mixins.less';
@@ -12,13 +12,9 @@ body {
   background-color: @background-primary;
 }
 
-h1, h2, h3, h4 {
-  color: @title-color;
-  margin-bottom: 0;
-}
-
 .section-content {
   background-color: @background-secondary;
+  box-shadow: 0px 1px 4px #3b43571a;
 }
 
 @import './layout/_header.less';

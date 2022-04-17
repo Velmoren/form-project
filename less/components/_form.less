@@ -9,6 +9,7 @@
       border: 1px solid @border-primary-color;
       border-radius: 8px;
       position: relative;
+      background-color: @background-secondary-light;
 
       &__remove-btn {
         display: flex;
@@ -50,15 +51,23 @@
   }
 
   &-label {
-    .custom-font(14px, 700, 16px);
+    color: @secondary-text-color;
+
+    &-top {
+      .custom-font(14px, 700, 16px);
+    }
   }
 
   &-input {
     &-range {
+      background-color: @range-track-background;
+      border-radius: 4px;
+
       &__value {
         width: 48px;
         height: 48px;
         color: @secondary-color;
+        background-color: @background-secondary-light;
       }
 
       &__wrapper {
@@ -68,6 +77,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 4px;
+        background-color: @background-secondary-light;
       }
     }
 
@@ -75,7 +85,7 @@
       width: 100%;
       border: 1px solid @border-color;
       border-radius: 4px;
-      padding: 14px 16px;
+      padding: 13px 16px;
       outline: none;
       .custom-font(14px, 400, 20px);
     }

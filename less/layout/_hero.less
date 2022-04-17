@@ -3,10 +3,12 @@
 @import '../abstracts/_mixins.less';
 
 .hero {
-  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 50px;
 
   &-title {
-    .custom-font(18px, 700, 20px)
+    .custom-font(18px, 700, 20px);
+    color: @primary-text-color;
   }
 
   &-theme {
@@ -21,7 +23,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: @background-fifthy;
+      background-color: @button-wrapper-background;
       position: relative;
 
       &:first-child {
@@ -42,7 +44,7 @@
           height: 24px;
           right: -1px;
           top: 4px;
-          background-color: @border-color;
+          background-color: @button-separator-color;
         }
       }
     }
