@@ -1,0 +1,33 @@
+// out: ../css/, compress: false, sourceMap: false
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import './abstracts/_variables.less';
+@import './abstracts/_mixins.less';
+@import './abstracts/_reset.less';
+
+* {
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  background-color: @background-primary;
+}
+
+h1, h2, h3, h4 {
+  color: @title-color;
+  margin-bottom: 0;
+}
+
+.section-content {
+  height: 100%;
+  background-color: @background-secondary;
+  padding-bottom: 400px !important;
+}
+
+@import './layout/_header.less';
+@import './layout/_hero.less';
+@import './components/_banner.less';
+@import './components/_btn.less';
+@import './components/_form.less';
+@import './components/_range.less';
+@import './components/_input.less';
+@import './components/_checkbox.less';

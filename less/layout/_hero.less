@@ -1,0 +1,50 @@
+// main: ../style.less
+@import '../abstracts/_variables.less';
+@import '../abstracts/_mixins.less';
+
+.hero {
+  margin-top: 25px;
+
+  &-title {
+    .custom-font(18px, 700, 20px)
+  }
+
+  &-theme {
+    &-buttons {
+      display: flex;
+    }
+
+    &-button {
+      padding: 4px;
+      width: 210px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: @background-fifthy;
+      position: relative;
+
+      &:first-child {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+
+      &:not(:last-child) {
+        &:after {
+          content: '';
+          position: absolute;
+          width: 2px;
+          height: 24px;
+          right: -1px;
+          top: 4px;
+          background-color: @border-color;
+        }
+      }
+    }
+  }
+}

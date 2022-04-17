@@ -1,0 +1,44 @@
+// main: ../style.less
+@import '../abstracts/_variables.less';
+@import '../abstracts/_mixins.less';
+
+@btn-background: @button-background;
+@btn-color: @button-color;
+@btn-global-background: @button-global-background;
+
+.custom-btn {
+  background-color: @btn-background;
+  height: 40px;
+  padding: 9px 16px;
+  border-radius: 4px;
+  color: @btn-color;
+  transition: background-color .2s;
+  .custom-font(14px, 700, 160%);
+
+
+  &:hover {
+    background-color: darken(@btn-background, 5%);
+  }
+
+  &.custom-btn-outline {
+    background-color: @btn-global-background;
+    color: @btn-background;
+    border: 1px solid @btn-background;
+
+    &:hover {
+      background-color: darken(@btn-global-background, 5%);
+    }
+  }
+}
+
+.theme-btn {
+  width: 100%;
+  min-height: 24px;
+  font-family: 'PT Sans', sans-serif;
+
+  .custom-font(12px, 700, 16px);
+
+  &.active {
+    background-color: @background-secondary;
+  }
+}
