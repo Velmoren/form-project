@@ -1,51 +1,52 @@
 // main: ../style.less
 
-@primary-text-color: #000000;
-@secondary-text-color: #282828;
-@primary-color: #282828;
-@secondary-color: #9F9F9F;
-@thirdy-color: #A9967D;
-@fourthy-color: #FFFFFF;
-@background-primary: #FCFCFC;
-@background-secondary: #FFFFFF;
-@background-secondary-light: #FFFFFF;
-@background-thirdy: #C4C4C4;
-@background-fourth: #D14114;
-@background-fifthy: #F4F4F4;
+:root {
+  --background-primary: #E5E5E5; 
+  --background-secondary: #FFFFFF;
+  --background-thirdy: #A9967D;
+  --background-fourthy: #9F9F9F; // unchecked check
+  --background-fifthy: #F4F4F4; // unchecked check
+  --primary-text-color: #282828; // main-text
+  --secondary-text-color: #FFFFFF; // main-text-invert
+  --thirdy-text-color: #9F9F9F; // placeholders
+  --alert-color: #D14114; // alert
+  --alert-background: #FFFFFF; // alert
+  --alert-background-hover: #FBF5EE; // alert
+  --alert-border: #D14114; // alert
+  --disabled-color: #9F9F9F; // disabled
+  --disabled-background: transparent; // disabled
+  --disabled-border: #f8f8f8; // disabled
+  --theme-background: #F4F4F4; // theme btns
 
-@border-color: #DAD5CE;
-@border-primary-color: #9F9F9F;
-@border-secondary-color: #D14114;
+  --primary-border-color: #DAD5CE; // border inputs
 
-// @primary-text-color: #FFFFFF;
-// @secondary-text-color: #FFFFFF;
-// @primary-color: #282828;
-// @secondary-color: #9F9F9F;
-// @thirdy-color: #60A772;
-// @fourthy-color: #FFFFFF;
-// @background-primary: #0f1723;
-// @background-secondary: #141C2C;
-// @background-secondary-light: rgba(#ffffff, .1);
-// @background-thirdy: #202E44;
-// @background-fourth: #D14114;
-// @background-fifthy: #0F1723;
-// @border-color: transparent;
-// @border-primary-color: #9F9F9F;
-// @border-secondary-color: #D14114;
+  --range-track-background: #F8F8F8;
 
-// button
-@button-wrapper-background: #F4F4F4;
-@button-background: @thirdy-color;
-@button-color: @fourthy-color;
-@button-separator-color: @border-color;
-@button-global-background: @background-primary;
+  --check-icon: url(../../images/check-white.svg);
+}
 
-// range 
-@range-track-background: @background-fifthy;
-@range-thumb-background: @thirdy-color;
-@range-track-border: @primary-text-color;
+body.theme-dark {
+  --background-primary: #303a49;
+  --background-secondary: #414E61;
+  --background-thirdy: #F3C17F;
+  --background-fourthy: #7F8995; // unchecked check
+  --background-fifthy: #F4F4F4; // unchecked check
+  --primary-text-color: #C2C7D0; // main-text
+  --secondary-text-color: #414E61; // main-text-invert
+  --thirdy-text-color: #7F8995; // placeholders
+  --alert-color: #FF7449; // alert
+  --alert-background: #303A49; // alert
+  --alert-background-hover: #1A2535; // alert
+  --alert-border: #FF7449; // alert
+  --disabled-color: #7F8995;; // disabled
+  --disabled-background: transparent; // disabled
+  --disabled-border: #7F8995;; // disabled
+  --theme-background: #303A49; // theme btns
 
-// switch
-@switch-background: @thirdy-color;
-@switch-unchecked-background: @secondary-color;
-@switch-round-background: @fourthy-color;
+  --primary-border-color: #2C3645; // border inputs
+
+  --range-track-background: #576375;
+
+  --check-icon: url(../../images/check-black.svg);
+}
+

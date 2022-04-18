@@ -7,8 +7,8 @@
   padding-bottom: 50px;
 
   &-title {
-    .custom-font(18px, 700, 20px);
-    color: @primary-text-color;
+    .custom-font(24px, 700, 28px);
+    color: var(--primary-text-color);
   }
 
   &-theme {
@@ -23,7 +23,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: @button-wrapper-background;
+      background-color: var(--theme-background);
       position: relative;
 
       &:first-child {
@@ -44,7 +44,7 @@
           height: 24px;
           right: -1px;
           top: 4px;
-          background-color: @button-separator-color;
+          background-color: var(--primary-border-color);
         }
       }
     }
